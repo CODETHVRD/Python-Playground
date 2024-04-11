@@ -5,13 +5,13 @@
 #If the game ends, ask them if they want to play again, if they say yes, then restart the game play automatically.
 
 import random
-number = 5 #random.randint(1,10)
+number = random.randint(1,10)
 is_Guess_Correct = False
 guess_counter = 0
 guesses_allowed = 6
 
-while is_Guess_Correct != True:
-    guess = input(f'Guess a number between 1 and 10: ')
+while is_Guess_Correct is not True:
+    guess = input('Guess a number between 1 and 10: ')
     if int(guess) not in range(1,10):
         print('Please enter a valid number between 1 and 10')
     else:
