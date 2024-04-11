@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-text = 'mrttaqrhknsw ih puggrur'
+text = input('Please enter text to encrypt: ')
 custom_key = 'python'
 
 def vigenere(message, key, direction=1):
