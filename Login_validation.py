@@ -1,7 +1,6 @@
 import json
 
-def read_json(login):
-    global logins
+def read_json(logins):
     logins = ''
     try: 
         with open('/workspaces/Python-Projects/.vscode/login.json') as json_file:
@@ -28,21 +27,25 @@ def Menu():
     global menu
     global username
     global password
+    global logins
+    
     menu = (print('1. Login'),print('2. Register New User'),print('3. Exit menu'))
     user_choice = input('Please select 1 - 3 to acess user options:\n')
-    if user_choice in menu == '1':
+    
+    if user_choice == '1':
         username = input('Please enter Username:\n')
         password = input('Please enter password:\n')
-        validation(username,password)
-    elif user_choice in menu == '2':
+        validation(username, password)
+    elif user_choice == '2':
         username = input('Please enter Username:\n')
         password = input('Please enter password:\n')
-        registration(username,password)
-    elif user_choice in menu == '3':
+        registration(username, password)
+    elif user_choice == '3':
         print('Exiting Menu')
 
 Menu()
     
+
 
      
     
