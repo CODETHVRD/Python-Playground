@@ -65,8 +65,9 @@ def run_Ceasar():
                 while True:
                     try:
                         choice_question_2 = input('Do you wish to return to the menu, Enter Y or N: ').upper()
-                    except ValueError:
                         if choice_question_2 != 'Y' or choice_question_2 != 'N':
+                            raise ValueError
+                    except ValueError:
                             print('Please input Y or N')
                             continue
                     else:
@@ -87,10 +88,12 @@ def run_Ceasar():
                 while True:
                     try:
                         choice_question_2 = input('Do you wish to return to the menu, Enter Y or N: ').upper()
-                    except ValueError:
                         if choice_question_2 != 'Y' or choice_question_2 != 'N':
+                            raise ValueError
+                    except ValueError:
                             print('Please input Y or N')
                             continue
+                    
                     else:
                         break
                 if choice_question_2 == 'Y':
