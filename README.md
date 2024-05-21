@@ -1,2 +1,5 @@
-Python projects
-these are python projects that i am going thorugh, i am using FreeCodeCamp.Org to get the projects to work on
+Repository of python projects that im interested and working on
+started with FREECODECAMP Comp Sci course,
+
+
+Current: Building graphical models/graphs using python
